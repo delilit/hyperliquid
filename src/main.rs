@@ -10,6 +10,7 @@ use tokio::{
 #[tokio::main]
 async fn main() {
     env_logger::init();
+    println!("Trying git");
 
     let mut info_client = InfoClient::new(None, Some(BaseUrl::Testnet)).await.unwrap();
 
