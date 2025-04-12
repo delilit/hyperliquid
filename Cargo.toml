@@ -1,0 +1,12 @@
+[package]
+name = "hyperliquid"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+hyperliquid_rust_sdk = "0.5.0"
+env_logger = "0.10.0"
+ethers = {version = "2.0.14", features = ["eip712", "abigen"]}
+tokio = {version = "1.29.1", features = ["full"]}
+tokio-tungstenite = {version = "0.20.0", features = ["native-tls"]}
+log = "0.4.19"
